@@ -24,11 +24,16 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lyq-KS-ask">
                                 <rect key="frame" x="157" y="738" width="100" height="31"/>
+                                <color key="backgroundColor" red="0.49767631289999997" green="0.75613671540000005" blue="0.60389083619999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="GX9-FI-rkQ"/>
                                 </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="startPressed" destination="BYZ-38-t0r" eventType="touchUpInside" id="8mc-nO-peG"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -41,6 +46,10 @@
                             <constraint firstItem="IwX-f7-ANs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="106" id="sm7-a4-fwL"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="helloWorldLabel" destination="IwX-f7-ANs" id="aQA-R5-wwB"/>
+                        <outlet property="startButton" destination="lyq-KS-ask" id="0kn-ZF-zEg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
